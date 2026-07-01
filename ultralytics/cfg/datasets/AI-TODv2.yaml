@@ -1,0 +1,17 @@
+path: /home/ng2/Deng/datasets/AI-TOD/AI-TODv2 # dataset root dir
+# path: /home/ng50701/deng/ng2/datasets/AI-TOD/AI-TODv2 # dataset root dir
+train: trainval/images # train images (relative to 'path')  6471 images
+# val: val/images # val images (relative to 'path')  548 images
+val: test/renamed_data/images # val images (relative to 'path')  548 images
+test: test/renamed_data/images # test images (optional)  1610 images
+
+# Classes
+names:
+  0: airplane
+  1: bridge
+  2: person
+  3: ship
+  4: storage-tank
+  5: swimming-pool
+  6: vehicle
+  7: wind-mill

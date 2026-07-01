@@ -1,2 +1,1 @@
-# S3Det:Small Object Detection via Selective Detail Refinement and Scene-level Semantic Injection in Remote Sensing
-The code will be coming soon!
+# FS-Det: Fine-Grained Detail Enhancement and Scene-Level Semantic Integration for Efficient Small Object Detection in Remote Sensing

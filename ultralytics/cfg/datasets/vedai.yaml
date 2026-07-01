@@ -1,0 +1,11 @@
+# Path to train and test images
+path: /home/ng2/Deng/datasets/VEDAI # dataset root dir
+train: ./train 
+val: ./val
+
+
+# number of classes
+nc: 9
+
+# class names
+names: ['Car', 'Truck', 'Boat', 'Tractor', 'Camping (Van)', 'Pickup', 'Plane', Others, 'Vans']

@@ -1,0 +1,37 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+# DIOR dataset configuration (20 classes)
+# Example usage: yolo train data=DIOR.yaml model=yolov8n.yaml epochs=100 imgsz=960
+
+# Dataset structure
+# path: /home/ng2/Deng/datasets/dior-r  # dataset root directory
+path: /home/ng50701/deng/ng2/datasets/dior-r
+train: trainval/images  # relative to 'path'
+val: test/images      # relative to 'path'
+test: test/images    # optional
+
+# Class names mapping (20 classes)
+names:
+  0: airplane
+  1: airport
+  2: baseballfield
+  3: basketballcourt
+  4: bridge
+  5: chimney
+  6: dam
+  7: Expressway-Service-area
+  8: Expressway-toll-station
+  9: golffield
+  10: groundtrackfield
+  11: harbor
+  12: overpass
+  13: ship
+  14: stadium
+  15: storagetank
+  16: tenniscourt
+  17: trainstation
+  18: vehicle
+  19: windmill
+
+# Recommended training command examples:
+# yolo detect train data=DIOR.yaml model=yolov8s.yaml pretrained=ultralytics/yolov8s.pt epochs=150 batch=8 imgsz=960 lr0=0.01
+# yolo detect train data=DIOR.yaml model=yolov8_GAM_SPDConv.yaml pretrained=ultralytics/yolov8s.pt epochs=150 batch=8 imgsz=960 lr0=0.01
