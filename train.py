@@ -35,7 +35,7 @@ def parse_opt():
     parser.add_argument('--project', default= 'output_dir/xiaorong/iou', help='save to project/name')
     parser.add_argument('--name', default='debug', help='save to project/name')
                                         # 训练参数
-    parser.add_argument('--epochs', type=int, default=175)
+    parser.add_argument('--epochs', type=int, default=300)
     parser.add_argument('--optimizer', default='AdamW', help='SGD, Adam, AdamW')
     parser.add_argument('--seed', type=int , default=0, help='random seed') # 随机种子
     parser.add_argument('--task', default='train', help='train, val, test, speed or study')
