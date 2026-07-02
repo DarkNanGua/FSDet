@@ -23,7 +23,7 @@ def parse_opt():
     parser.add_argument('--batch_size', type=int, default=8, help='batch size')
     parser.add_argument('--imgsz','--img', type=int, default=800, help='inference size (pixels)')
                                         # 模型
-    parser.add_argument('--config', type=str, default= 'ultralytics/cfg/models/v8/yolov8_propose_dysample_sk_3H.yaml', help='model path(s)')
+    parser.add_argument('--config', type=str, default= 'ultralytics/cfg/models/v8/yolov8_propose.yaml', help='model path(s)')
     parser.add_argument('--resume', type=bool, default= False, help='resume?True or False')
     parser.add_argument('--premodel', type=str, default= 'premodel/yolov8s.pt', help='load pretain')
     # parser.add_argument('--premodel', type=str, default= '', help='load pretain')

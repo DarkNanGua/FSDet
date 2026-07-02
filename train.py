@@ -25,7 +25,7 @@ def parse_opt():
     parser.add_argument('--batch_size', type=int, default=8, help='batch size')
     parser.add_argument('--imgsz','--img', type=int, default=640, help='inference size (pixels)')
                                         # 模型
-    parser.add_argument('--config', type=str, default= 'ultralytics/cfg/models/v8/yolov8_propose_dysample_sk_3H.yaml', help='model path(s)')
+    parser.add_argument('--config', type=str, default= 'ultralytics/cfg/models/v8/yolov8_propose.yaml', help='model path(s)')
     parser.add_argument('--resume', type=bool, default= False, help='resume?True or False')
     parser.add_argument('--premodel', type=str, default= 'premodel/yolov8s.pt', help='load pretain')
     # parser.add_argument('--premodel', type=str, default= 'output_dir/cocco/yolov8s5/weights/last.pt', help='load pretain')
@@ -36,7 +36,7 @@ def parse_opt():
     parser.add_argument('--name', default='debug', help='save to project/name')
                                         # 训练参数
     parser.add_argument('--epochs', type=int, default=300)
-    parser.add_argument('--optimizer', default='AdamW', help='SGD, Adam, AdamW')
+    parser.add_argument('--optimizer', default='SGD', help='SGD, Adam, AdamW')
     parser.add_argument('--seed', type=int , default=0, help='random seed') # 随机种子
     parser.add_argument('--task', default='train', help='train, val, test, speed or study')
     parser.add_argument('--device', default='0', help='cuda device, i.e. 0 or 0,1,2,3 or cpu')
